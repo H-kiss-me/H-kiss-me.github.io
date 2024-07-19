@@ -7,8 +7,8 @@ import TextPrimitive from "./TextPrimitive.js";
 import SphereObject from "./SphereObject.js";
 
 const app = new App(new THREE.Vector3(0, 0, 40));
-
-const text = new TextPrimitive("zyr");      
+    
+const text = new TextPrimitive("i am your father");
 text.onLoad = () => {
   text.geometry.computeBoundingBox();
   const max = text.geometry.boundingBox.max;
