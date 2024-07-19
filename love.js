@@ -8,7 +8,7 @@ import SphereObject from "./SphereObject.js";
 
 const app = new App(new THREE.Vector3(0, 0, 40));
     
-const text = new TextPrimitive("i am your father");
+const text = new TextPrimitive("I LV U");
 text.onLoad = () => {
   text.geometry.computeBoundingBox();
   const max = text.geometry.boundingBox.max;
@@ -42,30 +42,30 @@ app.startAnimation((time) => {
   outsideHeart.geometry.attributes.position.needsUpdate = true;
 });
 
-// const loader = new FontLoader();
-// let font = undefined;
-// loader.load("fonts/optimer_regular.typeface.json", function (response) {
-//   // font = response;
+const loader = new FontLoader();
+let font = undefined;
+loader.load("fonts/optimer_regular.typeface.json", function (response) {
+  // font = response;
 
-//   // const textGeo = new TextGeometry("miao", {
-//   //   font: font,
-//   //   size: 1,
-//   //   height: 1,
-//   //   curveSegments: 10,
-//   //   bevelEnabled: false,
-//   // });
-//   // textGeo.computeBoundingBox();
+  // const textGeo = new TextGeometry("叫爸爸", {
+  //   font: font,
+  //   size: 1,
+  //   height: 1,
+  //   curveSegments: 10,
+  //   bevelEnabled: false,
+  // });
+  // textGeo.computeBoundingBox();
 
-//   // const text = new Mesh(
-//   //   textGeo,
-//   //   new THREE.MeshBasicMaterial({
-//   //     color: new THREE.Color(250 / 255.0, 179 / 255.0, 205 / 255.0),
-//   //     transparent: true,
-//   //     opacity: 0.75,
-//   //   })
-//   // );
+  // const text = new Mesh(
+  //   textGeo,
+  //   new THREE.MeshBasicMaterial({
+  //     color: new THREE.Color(250 / 255.0, 179 / 255.0, 205 / 255.0),
+  //     transparent: true,
+  //     opacity: 0.75,
+  //   })
+  // );
 
-//   // const max = text.geometry.boundingBox.max;
-//   // text.position.set(-max.x / 2, -max.y / 2, -1);
-//   // text.material.color = new THREE.Color(250 / 255.0, 179 / 255.0, 205 / 255.0);
-// });
+  // const max = text.geometry.boundingBox.max;
+  // text.position.set(-max.x / 2, -max.y / 2, -1);
+  // text.material.color = new THREE.Color(250 / 255.0, 179 / 255.0, 205 / 255.0);
+});
